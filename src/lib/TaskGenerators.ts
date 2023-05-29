@@ -2,8 +2,8 @@ import Task from "./Task";
 
 class TaskGenerator {
     public generateSubstraction(): Task {
-        const minuend = this.getRandomIntInclusive(1, 20);
-        const subtrahend = this.getRandomIntInclusive(1, minuend);
+        const minuend = this.getRandomIntInclusive(2, 20);
+        const subtrahend = this.getRandomIntInclusive(1, minuend - 1);
     
         return new Task([minuend + "", "-", subtrahend + ""], (minuend - subtrahend) + "", "Subtraktion");
     }

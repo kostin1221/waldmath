@@ -7,7 +7,6 @@ import Substraction from './pages/substraction';
 import { Button, Container, Navbar, NavDropdown, Nav, Col, Row } from 'react-bootstrap';
 
 function App() {
-  const numberOfItems = 5;
 
   return (
     <div className="App">
