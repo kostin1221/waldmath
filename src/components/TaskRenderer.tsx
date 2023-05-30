@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Card } from "react-bootstrap";
 import styled from "@emotion/styled";
 import Task from "../lib/Task";
 
@@ -38,6 +37,8 @@ const TaskRenderer = ({
   const colorMap: { [details: string]: string } = {
     "-": "blue",
     "+": "red",
+    "/": "blue",
+    "*": "red",
   };
 
   const textInput = useRef<HTMLInputElement>(null);
